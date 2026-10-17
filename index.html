@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Wes Anderson Cinematography</title>
+   <link rel="stylesheet" href="css/index.css" type="text/css">
+</head>
+<body>
+  <header>
+    <div class="dropdown">
+  <button class="dropbtn"><b>MENU</b></button>
+  <div class="dropdown-content">
+    <a href="iod.html">Isle of Dogs</a>
+    <a href="ac.html">Asteroid City</a>
+    <a href="gbh.html">The Grand Budapest Hotel</a>
+    <a href="fmf.html">Fantastic Mr. Fox</a>
+  </div>
+    </div>
+  </header>
+  <main>
+    <h1>The Cinematic Style of Wes Anderson</h1>
+    
+    <article>Wes Anderson (born May 1, 1969, Houston, Texas, U.S.) is an American director and screenwriter known for the distinctive visual aesthetic of his quirky comedies and for his collaboration with screenwriter and actor Owen Wilson. His movies include The Royal Tenenbaums, Fantastic Mr. Fox (2009), Moonrise Kingdom (2012), and The Grand Budapest Hotel (2014), all of which were nominated for various Academy Awards. The Wonderful Story of Henry Sugar (2023) won an Oscar for best live action short film.</article>
+    <aside><q>I want to try not to repeat myself. But then I seem to do it continuously in my films. It's not something I make any effort to do. I just want to make films that are personal, but interesting to an audience. I feel I get criticized for style over substance, and for details that get in the way of the characters. But every decision I make is how to bring those characters forward.</q></aside>
+    <section>
+           <figure>
+    <img src="images/wescollage.png"  width="500" height="720" alt="Wes Anderson portrait">
+</figure>
+    </section>
+      </main>
+     <div id="casete">
+    <div class="caseta1">
+      <figure><img src="images/cine2.jpeg" width="600" height="300" alt="Symmetry"></figure>
+      <div id="text1">
+        <h2>Symmetry</h2>
+      <p>Anderson is renowned for using symmetry in his films, which creates a sense of harmony and balance. While pleasant to watch, this kind of composition also contributes to the fanciful, beguiling appearance of his films.In almost every shot there is this symmetry. Those that focus on a single character almost always place them in the centre of the frame, and where there are multiple characters, they often mirror each other on either side of a central point of the composition. This attention to symmetry also helps create a tableau effect, making shots seem nearly two-dimensional and appear like a series of paintings, which is key to creating Anderson’s signature style.</p>
+  </div>
+    </div>
+    <div class="caseta2">
+      <div id="text2"><h2>Planimetric Composition</h2>
+      <p>Planimetric composition (when the camera is perpendicular to elements of the scene) is what makes his shots appear two dimensional. Characters generally move horizontally or vertically in relation to these plains and the camera. Anderson also uses compass point editing techniques such as whip pans in 90 degree increments to maintain this composition. The resulting effect? The filmic space looks and feels constructed and the viewer is likely conscious of this fact. The debate here is whether this effectively contributes to the cinematic experience or if it takes the viewer out of the film instead.</p>
+      </div>
+      <figure><img src="images/cine1.jpg" width="600" height="350" alt="Composition"></figure>
+      
+    </div>
+    <div class="caseta3">
+      <figure><img src="images/cine3.jpeg" width="600" height="300" alt="Colour"></figure>
+       <div id="text3"><h2>Colour</h2>
+      <p>Another stand out feature of the Wes Anderson style is colour. Notably, each movie has its own colour palette – usually charming pastel colours. When he does use bright colours, it is in contrast to sad events. This overall exaggerated use of colour creates a world far removed from reality which allows Anderson to get away with more extraordinary plots. Anderson favors soft pinks, pale yellows, and light blues that give his films a vintage, dreamlike quality. Bright reds, deep blues, and earthy greens punctuate scenes, creating contrast and visual balance. His films often balance warm yellows and reds with cooler blues and greens to create a harmonious yet striking aesthetic.</p>
+        </div>
+    </div>
+  </div>
+  <footer><a href="https://youtu.be/NEOvfStFSvM">Learn more about Wes Anderson's movies!</a></footer>
+ <div id="form-container" style="display: none;">
+        <h2>FEEDBACK</h2>
+        <form id="movie-form" action="Cinema" method="post" target="_self">   
+                <div class="form-group">
+                    <label for="nume">Full name:</label>
+                    <!-- input text -->
+                    <input type="text" id="nume" name="nume" minlength="3" maxlength="30" required> 
+                </div>
+                <div class="form-group">
+                    <label for="data-nasterii">Birthdate:</label>
+                    <!-- input date  -->
+                    <input type="date" id="data-nasterii" name="data-nasterii" 
+                           min="1950-01-01" max="2025-01-01" required>
+                </div>
+                <div class="form-group">
+                    <label for="rating">Rating</label>
+                    <div>
+                      <!-- input range -->
+                        <input type="range" id="rating-slider" name="rating"
+                               min="1" max="10" step="1" required>
+                        <output for="rating-slider" id="rating-value">1</output>
+                    </div>
+                </div>
+          
+
+            <fieldset>
+                <legend> Contact </legend>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefon">Phone number :</label>
+                    <input type="tel" id="telefon" name="telefon"
+                            pattern="[0-9]{10}" required>   
+                </div>
+
+    
+            </fieldset>
+                <div class="form-group textarea-group">
+                    <label for="alte-detalii">Other mentions:</label>
+                    <!-- textare -->
+                    <textarea id="alte-detalii" name="alte-detalii" rows="3" maxlength="500" required></textarea>
+                </div>
+
+
+            <button type="submit" id="submit-button">Send feedback</button>
+
+        </form>
+
+        <div id="success-message" style="display: none;">
+            <h3>Feedback received successfully! </h3>
+        </div>
+    </div>
+
+<script src="proiect.js" defer></script>
+</body>
+</html>

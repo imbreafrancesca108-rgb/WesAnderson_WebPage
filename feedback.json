@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Maria",
+    "rating": 9,
+    "comment": "Useful information!"
+  },
+  {
+    "name": "Ken",
+    "rating": 6,
+    "comment": "You could add more photos"
+  }
+]
